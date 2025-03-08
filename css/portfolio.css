@@ -319,7 +319,53 @@ footer{
   height: 20%;
   width: 100%;
   padding: 20px;
+  color: var(--backgroundColor);
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
 }
 
+.footer-contact,
+.footer-social,
+.footer-portfolio {
+  text-align: left;
+}
+
+.footer-contact ul,
+.footer-social ul,
+.footer-portfolio ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li,
+.footer-social li,
+.footer-portfolio li {
+  margin: 8px 0;
+}
+
+.footer-contact a,
+.footer-social a,
+.footer-portfolio a {
+  text-decoration: none;
+  color: var(--backgroundColor);
+  font-weight: bold;
+}
+
+.footer-contact a:hover,
+.footer-social a:hover,
+.footer-portfolio a:hover {
+  color: var(--accentColor);
+}
+
+.footer-name {
+  margin-top: 30px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--grey);
+}
 
 
