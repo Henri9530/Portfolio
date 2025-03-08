@@ -13,14 +13,12 @@
   --primaryColorDark: #026868;
   --grey: #777474;
 }
-
 html{
   scroll-behavior: smooth;
 }
 body{
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
- 
 }
 header{
   height: 12%;
@@ -40,14 +38,12 @@ header .left, header .right{
   gap: 10px;
   position: relative;
   top: 0;
-  /* border: 1px solid var(--accentColor); */
   color: var(--backgroundColor);
 }
 .right{
   display: flex;
   justify-content: space-around;
 }
-
 .right nav ul li {
   list-style: none;
   display: flex;
@@ -55,50 +51,26 @@ header .left, header .right{
 .right nav a{
   text-decoration: none;
   color: var(--backgroundColor);
-  /* border: 1px solid var(--accentColor); */
   padding: 10px;
   margin: 5px;
   display: inline-block;
 }
-/* .menu div {
-  height: 2.5px;
-  border-radius: 4px;
-  background-color: var(--backgroundColor); 
-  display: flex;
-  width: 20px; 
-  margin: 5px auto; 
-  transition: all 0.3s ease; 
-} */
-
-/* .menu.open div:nth-child(1){
-  transform: rotate(45deg) translateX(8px);
-}
-.menu.open div:nth-child(2){
-  opacity: 0;
-}
-.menu.open div:nth-child(3){
-  transform: rotate(-45deg) translateX(-8px);
-} */
-
 main{
   height: 80%;
 }
 section {
   height: 100vh;
 }
-
 nav ul li .con {
   background-color: var(--primaryColor);
   padding: 10px 15%;
 }
-
 #home{
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   text-align: center;
-  /* margin-left: 9%; */
   padding: 20px;
   color: var(--backgroundColor);
   background: url('../images/bg.jpeg') center / cover no-repeat fixed;
@@ -107,7 +79,6 @@ nav ul li .con {
   font-size: 50px;
   margin: 10% 0 4px 9%;
 }
-
 #home h3{
   font-size: 20px;
   margin: 0 0 4px 9%;
@@ -131,30 +102,25 @@ nav ul li .con {
 #home a:hover{
   background-color: var(--primaryColorDark);
 }
-
 #about{
   background-color: var(--tertiaryColor);
 }
-
 #about .about{
   display: flex;
   flex-direction: column;
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
- 
 }
 #about .about div, .about img{
   padding: 10px;
   margin: 23% 20px 5px 30%;
-  /* border: 2px solid; */
 }
 .about img{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  border: 1px solid var(--accentColor);
 }
 #about h4{
   color: var(--primaryColor);
@@ -163,17 +129,14 @@ nav ul li .con {
   font-size: 14px;
 }
 #about h2{
-  /* color: var(--primaryColor); */
   margin-bottom: 15px;
   font-size: 40px;
 }
-
 #about p{
   color: var(--grey);
   margin-bottom: 30px;
   font-size: 20px;
 }
-
 #about a{
   color: var(--grey);
   font-size: 20px;
@@ -181,7 +144,6 @@ nav ul li .con {
 #about a:hover{
   text-decoration: none;
 }
-
 #services{
   background-color: var(--backgroundColor);
   display: flex;
@@ -237,7 +199,6 @@ nav ul li .con {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #projects{
   background-color: var(--tertiaryColor);
   display: flex;
@@ -258,38 +219,29 @@ nav ul li .con {
 .projects a:hover{
   text-decoration: underline;
 }
-
 #contact{
   background-color: var(--backgroundColor);
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding-bottom: 30px;   */
-  /* gap: 20px; */
 }
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   margin: 10% 5%;
- 
 }
 .contact .info{
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-  /* background-color: var(--accentColor); */
 }
-
 .contact .info h4{
   margin-top: 30%;
 }
-
-
 .contact form {
   padding: 10px;
   margin-top: 10px;
-  
 }
 .contact label {
   font-size: 16px;
@@ -304,7 +256,6 @@ nav ul li .con {
 .contact input, .contact textarea{
   margin-top: 6px;
 }
-
 .contact button{
   background-color: var(--primaryColor);
   border: none;
@@ -317,38 +268,32 @@ nav ul li .con {
   font-size: 15px;
 }
 .contact-card {
-  background: #f8f8f8; /* Light grey background */
+  background: #f8f8f8; 
   padding: 20px;
   border-radius: 10px;
   max-width: 350px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .contact-card h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .contact-card a {
   text-decoration: none;
   color: var(--grey);
   font-weight: 500;
 }
-
 .contact-card a:hover {
   text-decoration: underline;
 }
-
 .contact-card p {
   color: var(--grey);
   margin: 5px 0;
 }
-
 .hours-list {
   margin-top: 10px;
 }
-
 .hours-list div {
   display: flex;
   justify-content: space-between;
