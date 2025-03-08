@@ -54,16 +54,27 @@ header .left, header .right{
   padding: 10px;
   margin: 5px;
   display: inline-block;
+  position: relative;
+}
+.right nav a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 3px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  background-color: var(--backgroundColor);
+}
+.right nav a:hover::after{
+  width: 100%;
 }
 main{
   height: 80%;
 }
 section {
   height: 100vh;
-}
-nav ul li .con {
-  background-color: var(--primaryColor);
-  padding: 10px 15%;
 }
 #home{
   display: flex;
