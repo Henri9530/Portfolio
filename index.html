@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/portfolio.css" />
-    <!-- <link rel="icon" type="image/x-icon" href="/images/love.png" /> -->
     <script
       type="text/javascript"
       src="https://cdn.emailjs.com/dist/email.min.js"
@@ -14,28 +13,27 @@
   <body>
     <header>
       <div class="left">
-        <img src="images/logo.png" alt="image" width="60px" />
+        <img src="images/logo.png" alt="logo" width="60px" />
         <h2>Jean Henri Mendoza</h2>
       </div>
+
       <div class="right">
         <div class="nav">
+          <!-- Hamburger Menu -->
+          <div class="menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <nav>
             <ul>
-              <li>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-                <a class="con" href="#contact">Contact</a>
-              </li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a class="con" href="#contact">Contact</a></li>
             </ul>
           </nav>
-        </div>
-
-        <div class="menu">
-          <div></div>
-          <div></div>
-          <div></div>
         </div>
       </div>
     </header>
@@ -51,6 +49,7 @@
 
         <a href="#services">View Services</a>
       </section>
+
       <section id="about">
         <div class="about">
           <div>
@@ -100,8 +99,8 @@
               <img src="images/ui.png" alt="image" />
               <h2>User-Friendly website</h2>
               <p>
-                I built a user-friendly website using HTML, CSS, JavaScript,
-                PHP, and MySQL, prioritizing UX and balanced design.
+                I build user-friendly websites using HTML, CSS, JavaScript, PHP,
+                and MySQL, prioritizing UX and balanced design.
               </p>
             </div>
           </div>
@@ -134,7 +133,7 @@
                 improvement.
               </p>
               <a
-                href="https://github.com/Henri9530/Teacher-Evalaution-System.git"
+                href="https://github.com/Henri9530/Teacher-Evaluation-System.git"
                 target="_blank"
                 >Click Here!</a
               >
@@ -322,9 +321,23 @@
     </footer>
 
     <script>
-      const menu = document.querySelector(".menu");
-      menu.addEventListener("click", () => {
-        menu.classList.add("open");
+      // Function to toggle the display of the menu when the hamburger is clicked
+      function toggleMenu() {
+        const menu = document.querySelector(".menu");
+        const nav = document.querySelector(".nav");
+
+        // Toggle 'open' class to show or hide the navigation menu
+        menu.classList.toggle("open");
+        nav.classList.toggle("open");
+      }
+
+      // Add event listeners to each navigation link to hide the menu when clicked
+      const navLinks = document.querySelectorAll(".nav a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          // Hide the menu when a link is clicked
+          toggleMenu();
+        });
       });
 
       emailjs.init("4s5ljJrinNd_RAOsd"); //publick key
